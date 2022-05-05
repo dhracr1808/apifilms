@@ -1,10 +1,10 @@
-const express = require("express");
+import express from "express";
 
-const { PORT } = require("./config/config");
+import { PORT } from "./config/config";
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("hola heroku");
+  res.send("hola heroku estoy ejecutando babel");
 });
 
 app.listen(process.env.PORT, function () {

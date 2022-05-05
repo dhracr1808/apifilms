@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server --exec babel-node"
+    "server": "nodemon server --exec babel-node",
+    "build": "babel src -d dist --copy-files",
+    "start": "node server/index.js"
   },
   "keywords": [],
   "author": "",

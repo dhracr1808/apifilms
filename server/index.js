@@ -1,10 +1,10 @@
-import express from "express";
+const express = require("express");
 
-import { PORT } from "./config/config";
+const { PORT } = require("./config/config");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("hola");
+  res.send("hola heroku");
 });
 
 app.listen(PORT, function () {
